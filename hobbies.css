@@ -1,0 +1,75 @@
+@import url('common.css');
+
+body {
+    background: url('ranger-4df6c1b6.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hobby-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hobby-list li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+}
+
+.hobby-list li .icon {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.hobby-list li:hover {
+    background: #e8f5e9;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.hobby-list .header {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hobby-list .media {
+    padding: 15px 20px;
+    display: none;
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+
+.hobby-list .media img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-list li.active .media {
+    display: block;
+}
+
+.lyrics {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: white
+    ;
+}

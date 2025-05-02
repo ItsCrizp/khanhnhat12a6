@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="hobbies.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Khánh Nhật Profile</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Trang chính</a></li>
+            <li><a href="personal.html">Thông tin</a></li>
+            <li><a href="hobbies.html">Sở thích</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="workplace.html">Workplace</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Một số sở thích</h2>
+            <ul class="hobby-list">
+                <li>
+                    <div class="header">
+                        <span class="icon">📚</span>
+                        <span>Đọc sách (Đặc biệt là truyện tranh và tiểu thuyết)</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="header">
+                        <span class="icon">💻</span>
+                        <span>Lập trình (Python, C+, Pascal)</span>
+                </li>
+                <li>
+                    <div class="header">
+                        <span class="icon">🎮</span>
+                        <span>Chơi game (Valorant, Minecraft)</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="header">
+                        <span class="icon">🎧</span>
+                        <span>Nghe nhạc (Pop, Rap, UK Drill)</span>
+                        </div>
+                        <audio controls>
+                            <source src="y2mate.com - Juice WRLD  Wasted TikTok Remix hvken x murkish  chair Lyrics Eat a branch Tiktok.mp3" type="audio/mpeg">
+                        </audio>
+                        <script>
+                            const audio = document.querySelector('audio');
+                            const lyrics = [
+                                {time: 1, text: "hvken x murkish" },
+                                {time: 4, text: "Wasted - Juice Wrld Remix" },
+                                {time: 7, text: "WASTED" },
+                                {time: 10, text: "GTA love, b- wasted" },
+                                {time: 13, text: "I'm on these d-, I feel wasted" },
+                                {time: 16, text: "get her off my mind when I'm wasted" },
+                                {time: 19, text: "I waste all my time when I'm wasted" },
+                                {time: 22, text: "GTA love, b- wasted" },
+                                {time: 25, text: "I'm on these d-, I feel wasted" },
+                                {time: 28, text: "get her off my mind when I'm wasted" },
+                                {time: 31, text: "I waste all my time when I'm wasted" },
+                            ];
+
+                            const lyricContainer = document.createElement('div');
+                            lyricContainer.classList.add('lyrics');
+                            document.body.appendChild(lyricContainer);
+
+                            audio.addEventListener('timeupdate', () => {
+                                const currentTime = audio.currentTime;
+                                const currentLyric = lyrics.find(lyric => currentTime >= lyric.time && currentTime < lyric.time + 4);
+                                lyricContainer.textContent = currentLyric ? currentLyric.text : '';
+                            });
+                        </script>
+                        <style>
+                        </style>
+                    </li>
+                    </div>
+            </ul>
+        </section>
+        
+        
+    </main>

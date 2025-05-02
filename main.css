@@ -1,0 +1,56 @@
+@import url('common.css');
+
+body {
+    background: url('ranger-4df6c1b6.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    gap: 10px; 
+    border: 2px solid #4CAF50 ;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main p + p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3 {
+    margin: 0; 
+    color: black;
+}
+
+video {
+    max-width: 100%; 
+}

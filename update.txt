@@ -1,0 +1,15 @@
+*Update
+
+- Removal
+Remove pacman.js
+Remove Video#1
+Remove unexpected music pop up
+
+- Addon
+Hover for nav li ul
+
+-Replace
+
+Replace Video 0306 for Video#1
+Hover color change
+Main part color change
